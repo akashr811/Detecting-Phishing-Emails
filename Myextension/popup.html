@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-phisherman</title>
+    <style>
+      #top{
+        width: 70px;
+        height: 80px;
+      }
+    </style>
+    <!-- <script>
+      const apiURL='http://127.0.0.1:5000/ext'
+      async function getDATA(){
+          const res=fetch(apiURL);
+          const data =res.json();
+          const { MailsChecked, PhishingEmails } = data;
+          document.getElementById('all').textContent = MailsChecked;
+          document.getElementById('ep').textContent = PhishingEmails;
+      }
+
+      getDATA();
+    </script> -->
+</head>
+<body>
+  <!-- <p>hello</p> -->
+    <div class="card" style="width: 18rem;">
+      <span><img src="logo.png" class="card-img-top" id="top" alt="...">
+        <strong><span class="text-dark" style="font-size:25px"> E-Phish Hunt</span></strong></span>
+        <div class="card-body">
+          <div class="text-light bg-dark"><center><h5 class="card-title">Mail details</h5></center></div>
+          <p class="card-text" style="font-size:13px">The following gives the summary of your e-mails</p>
+      <form>
+        <table class="table">
+          <thead>
+          <tr>
+          
+          <p><strong>Checked Mails : <span id= "all" class="text-secondary"></span><br/>
+             Phishing Mails : <span id= "ep" class="text-danger"></span></strong></p>
+
+          </tr>
+          </thead>
+        </table></form>
+        </div>
+        <div>
+          <a id="newURL" href="http://127.0.0.1:5000/result" target="_blank" class="btn btn-primary">View Report</a>
+        </div>
+      </div>
+
+      <p id="ep"></p>
+      <script src="popup.js"></script>
+      <script src="myscript.js"></script>
+
+      
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+</body>
+</html>

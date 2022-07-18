@@ -1,0 +1,27 @@
+{
+    "name": "Phisherman",
+    "version": "0.0.1",
+    "manifest_version":2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "chrEx.png"
+    },
+    "icons":{
+        "128":"chrEx.png"
+    },
+    "permissions": [
+        "http://127.0.0.1:5000/",
+        
+        "tabs",
+        "activeTab",
+        "contextMenus",
+        "storage",
+        "https://mail.google.com/",
+        "alarms",
+        "background",
+        "cookies",
+        "privacy",
+        "sessions",
+        "unlimitedStorage"
+        ]
+}
